@@ -4,33 +4,8 @@
     <meta charset="utf-8">
     <title>ジュン'S ホームページ</title>
     <link rel="stylesheet" href="style.css">
+    <script src="language.js" charset="utf-8"></script>
   </head>
-  <script>
-    function LanguageChange(){
-      let element = document.getElementById("grid");
-      let element_korea = document.getElementById("grid_korea");
-      const mediaQuery = window.matchMedia('(max-width: 768px)');
-      if(Language.value ==='韓国語'){
-        element.style.display = "none";
-        element_korea.style.display = "grid";
-        Language.value ='日本語';
-        if (mediaQuery.matches) {
-          element_korea.style.display = "block";
-          element_korea.style.border = "none";
-          document.querySelector("h1").border = "none";
-        }
-      }else{
-        element.style.display = "grid";
-        element_korea.style.display = "none";
-        Language.value ='韓国語';
-        if (mediaQuery.matches) {
-          element.style.display = "block";
-          element.style.border = "none";
-          document.querySelector("h1").border = "none";
-        }
-      }
-    }
-  </script>
   <body>
     <input type="button" name="" id="Language" value="韓国語" onclick="LanguageChange();">
     <h1 id="h1"><a href="index.html">ジュン'S ホームページ</a></h1>

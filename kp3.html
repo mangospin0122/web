@@ -4,28 +4,66 @@
     <meta charset="utf-8">
     <title>ジュン'S ホームページ</title>
     <link rel="stylesheet" href="style.css">
+    <script src="language.js" charset="utf-8"></script>
   </head>
   <body>
-    <input type="button" name="" value="韓国語">
-    <h1><a href="index.html">ジュン'S ホームページ</a></h1>
+    <input type="button" name="" id="Language" value="韓国語" onclick="LanguageChange();">
+    <h1 id="h1"><a href="index.html">ジュン'S ホームページ</a></h1>
     <div id="grid">
-      <ul>
+      <ul id="ul_japan">
         <li><a href="kp1.html">日記</a></li>
         <li><a href="kp2.html">ご飯食べた！</a></li>
         <li><a href="kp3.html">ゲーム</a></li>
         <li><a href="kp4.html">写真</a></li>
       </ul>
-      <div id="in_text">
+      <div id="in_text_japan">
         <p>
-          このホームページは会社で学んだことを基にして作り上げたものです！
-          この先のことはわからないですけど、出来るだけアップデートしていく予定です！
+          このホームページは会社で学んだことを基にして作り上げたものです！<br>
+          この先のことはわからないですけど、出来るだけアップデートしていく予定です！<br>
           誰が見てくれるのかは、全然分かりません！
         </p>
         <p>
-          内容としては、その日に起きたことを整理する日記の形です。
+          内容としては、その日に起きたことを整理する日記の形です。<br>
           写真も有りますので、是非楽しんでください。
         </p>
       </div>
     </div>
+    <div id="grid_korea">
+      <ul id="ul_korea">
+        <li><a href="kp1.html">일기</a></li>
+        <li><a href="kp2.html">밥 먹었다!</a></li>
+        <li><a href="kp3.html">게임</a></li>
+        <li><a href="kp4.html">사진</a></li>
+      </ul>
+      <div id="in_text_korea">
+        <p>
+          이 홈페이지는 회사에서 배운 것을 바탕으로 만들어 낸 것입니다!<br>
+          앞으로의 일은 모르지만, 가능한 업데이트 해 나갈 예정입니다!<br>
+          누가 봐줄 것인가는 전혀 모릅니다!
+        </p>
+        <p>
+          내용으로는 그날 일어난 일을 정리하는 일기의 형태입니다.<br>
+          사진도 있기 때문에, 부디 즐겨주세요.
+        </p>
+      </div>
+    </div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://crazymango.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </body>
 </html>

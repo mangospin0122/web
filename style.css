@@ -50,31 +50,10 @@ h1{
   margin-right: 30px;
   color: hotpink;
 }
-
-
 a {
   color: hotpink;
   text-decoration: none;
 }
-@media (max-width:800px) {
-  #grid{
-    display: block;
-  }
-  #grid ul_japan{
-    border-right: none;
-    display: block;
-    padding-bottom: 10px;
-  }
-  #grid ul_korea{
-    border-right: none;
-    display: block;
-    padding-bottom: 10px;
-  }
-  h1{
-    border-bottom: none;
-  }
-}
-
 input{
   margin: 5px;
   margin-bottom: 0px;
