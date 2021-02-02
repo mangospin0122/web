@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ジュン'S ホームページ</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <script>
+    function LanguageChange(){
+      let element = document.getElementById("grid");
+      let element_korea = document.getElementById("grid_korea");
+      const mediaQuery = window.matchMedia('(max-width: 768px)');
+      if(Language.value ==='韓国語'){
+        element.style.display = "none";
+        element_korea.style.display = "grid";
+        Language.value ='日本語';
+        if (mediaQuery.matches) {
+          element_korea.style.display = "block";
+          element_korea.style.border = "none";
+          document.querySelector("h1").border = "none";
+        }
+      }else{
+        element.style.display = "grid";
+        element_korea.style.display = "none";
+        Language.value ='韓国語';
+        if (mediaQuery.matches) {
+          element.style.display = "block";
+          element.style.border = "none";
+          document.querySelector("h1").border = "none";
+        }
+      }
+    }
+  </script>
+  <body>
+    <input type="button" name="" id="Language" value="韓国語" onclick="LanguageChange();">
+    <h1 id="h1"><a href="index.html">ジュン'S ホームページ</a></h1>
+    <div id="grid">
+      <ul id="ul_japan">
+        <li><a href="kp1.html">日記</a></li>
+        <li><a href="kp2.html">ご飯食べた！</a></li>
+        <li><a href="kp3.html">ゲーム</a></li>
+        <li><a href="kp4.html">写真</a></li>
+      </ul>
+      <div id="in_text_japan">
+        <p>
+          このホームページは会社で学んだことを基にして作り上げたものです！<br>
+          この先のことはわからないですけど、出来るだけアップデートしていく予定です！<br>
+          誰が見てくれるのかは、全然分かりません！
+        </p>
+        <p>
+          内容としては、その日に起きたことを整理する日記の形です。<br>
+          写真も有りますので、是非楽しんでください。
+        </p>
+      </div>
+    </div>
+    <div id="grid_korea">
+      <ul id="ul_korea">
+        <li><a href="kp1.html">일기</a></li>
+        <li><a href="kp2.html">밥 먹었다!</a></li>
+        <li><a href="kp3.html">게임</a></li>
+        <li><a href="kp4.html">사진</a></li>
+      </ul>
+      <div id="in_text_korea">
+        <p>
+          이 홈페이지는 회사에서 배운 것을 바탕으로 만들어 낸 것입니다!<br>
+          앞으로의 일은 모르지만, 가능한 업데이트 해 나갈 예정입니다!<br>
+          누가 봐줄 것인가는 전혀 모릅니다!
+        </p>
+        <p>
+          내용으로는 그날 일어난 일을 정리하는 일기의 형태입니다.<br>
+          사진도 있기 때문에, 부디 즐겨주세요.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

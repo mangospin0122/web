@@ -1,0 +1,81 @@
+body{
+  margin: 0px;
+  background-color: snow;
+}
+h1{
+  text-align: center;
+  border-bottom: 5px solid pink;
+  padding: 15px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: hotpink;
+  display: block;
+}
+#grid{
+  display: grid;
+  display: run-in;
+  grid-template-columns: 150px 1fr;
+}
+#grid ul{
+  color: hotpink;
+  border-right: 5px solid pink;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-size: large;
+}
+#grid #in_text_japan{
+  margin-left: 30px;
+  margin-right: 30px;
+  color: hotpink;
+}
+
+#grid_korea{
+  display: none;
+  grid-template-columns: 150px 1fr;
+}
+#grid_korea ul{
+  color: hotpink;
+  border-right: 5px solid pink;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-left: 30px;
+  font-size: large;
+}
+#grid_korea #in_text_korea{
+  margin-left: 30px;
+  margin-right: 30px;
+  color: hotpink;
+}
+
+
+a {
+  color: hotpink;
+  text-decoration: none;
+}
+@media (max-width:800px) {
+  #grid{
+    display: block;
+  }
+  #grid ul_japan{
+    border-right: none;
+    display: block;
+    padding-bottom: 10px;
+  }
+  #grid ul_korea{
+    border-right: none;
+    display: block;
+    padding-bottom: 10px;
+  }
+  h1{
+    border-bottom: none;
+  }
+}
+
+input{
+  margin: 5px;
+  margin-bottom: 0px;
+}
