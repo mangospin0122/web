@@ -55,6 +55,9 @@ a {
   text-decoration: none;
 }
 input{
-  margin: 5px;
+  margin: 15px;
   margin-bottom: 0px;
+}
+#disqus_thread{
+  margin: 30px;
 }
